@@ -240,8 +240,11 @@ color: #a47ee8;
 		height: 24%; */
 	display: none;
 	}
-	.offset-0{
+	/* .offset-0{
 		margin-left: 40px;
+	} */
+	.navbar{
+		background-color: #fff
 	}
 	
 		}
