@@ -158,7 +158,8 @@ color: #a47ee8;
 			font-size: 30px;
 			line-height: 2;
 			position: absolute;
-			top:250px
+			top:250px;
+			left: 100px;
 		 }
 		strong{
 			color: #a47ee8;
@@ -171,6 +172,13 @@ color: #a47ee8;
 			color: #fff;
 			text-transform: uppercase;
 			transition: .6s;
+			
+				
+		}
+		.deal-of-week	.shop-now{
+			display: inline-block;
+			margin-top: 30px;
+			
 		}
 		.shop-now:hover{
 			background-color: #fff;
@@ -187,7 +195,7 @@ color: #a47ee8;
 
 		}
 
-	
+		
 
 		.box-item img{
 			width: 100%;
@@ -199,7 +207,7 @@ color: #a47ee8;
 		.box-item .shop-now{
 			position: absolute;
 			top:40%;
-			left: 30%;
+			left: 36%;
 			background-color: #fff;
 			color: #333;
 			border-color: #fff;
@@ -209,12 +217,35 @@ color: #a47ee8;
 			font-size: 22px;
 
 		}
-		.box-item img:hover {
-		  transform: scale(1.1);
-		  transition: 1s;
+		
+		.box-item::before {
+			position: absolute;
+			left: 35px;
+			top: 30px;
+			border: 13px solid #a47ee8;
+			content: "";
+			opacity: 0.3;
+			width: calc(100% - 70px);
+			height: calc(100% - 60px);
+			-webkit-transform: scale(0);
+			-ms-transform: scale(0);
+			transform: scale(0);
+			-webkit-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
 		}
-
+		.box-item:hover::before {
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+		}
+		@media (max-width: 1200px){
+			.instagram-sec{
+               display: none;
+			}
+		}
 		@media (max-width: 800px){
+			
  
 			.offset-1,.offset-2{
 				   margin-left:0px
@@ -231,18 +262,11 @@ color: #a47ee8;
 		 
 	   }
 	   .box-item img{
-		width: 90%;
-		margin-left: 20px;
+		width: 100%;
+		/* margin-left: 20px; */
 	}
-	.instagram-sec {
-		
-		/* width: 50%;
-		height: 24%; */
-	display: none;
-	}
-	/* .offset-0{
-		margin-left: 40px;
-	} */
+	
+	
 	.navbar{
 		background-color: #fff
 	}
@@ -506,16 +530,14 @@ color: #a47ee8;
 		}
 		#arrow{
 			display: inline-block;
-			position: absolute;
 			bottom: 0;
 			right: 50px;
-			background: #fff;
-			color: #a47ee8;
-			padding:15px 20px  
+			background: #a47ee8;
+			color: #fff;
+			padding:15px 20px  ;
+			position: fixed;
 		}
-		footer{
-			position: relative;
-		}
+		
 		
 		/*---------------------
 		  Deal Of The Week
@@ -566,6 +588,7 @@ color: #a47ee8;
 		.blog-sec-item i{
          color:#a47ee8 ;
 		}
+		
 
 /*---------------------
   Partner Logo
@@ -841,6 +864,7 @@ font-weight: normal;
 
 .blog-sidebar .search-form form {
 	position: relative;
+	
 }
 
 .blog-sidebar .search-form form input {
@@ -1063,4 +1087,37 @@ color: #fff;
 	}
 	a h4{
 		color: #171717;
+	}
+
+	@media only screen and (max-width: 499px){
+		.countdown-timer .cd-item {
+			margin-top: 20px;
+		}
+		.countdown-timer .cd-item:last-child {
+			margin-right: 35px;
+		}
+		.deal-of-week	.shop-now{
+		margin-top: unset;
+		margin-right: 20px;
+		}
+		.blog-sec-item img{
+			width: 280px;
+			height: 280px;
+
+		   }
+		   .overlay {
+			position: absolute;
+			opacity: 0;
+			width: 79%;
+			height: 92%;
+			top: 3%;
+			left: 10%;
+			background-color: rgba(000,000,000,0.5);
+		}
+		.instagram-sec{
+			display: unset;
+		 }
+		.instagram-sec-contain img{
+          margin: 10px 0;
+		}
 	}
