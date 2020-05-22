@@ -1106,13 +1106,12 @@ color: #fff;
 
 		   }
 		   .overlay {
-			position: absolute;
-			opacity: 0;
-			width: 79%;
+			
 			height: 92%;
+			width: 69%;
+			height: 94%;
 			top: 3%;
-			left: 10%;
-			background-color: rgba(000,000,000,0.5);
+			left: 16%
 		}
 		.instagram-sec{
 			display: unset;
