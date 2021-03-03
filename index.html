@@ -52,6 +52,8 @@
                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                      <a class="dropdown-item" href="products.html">product</a>
                      <a class="dropdown-item" href="cart.html">cart</a>
+                     <a class="dropdown-item" href="check-out.html">checkout</a>
+
                    </div>
                  </li>
                   
@@ -61,19 +63,65 @@
                   <li class="nav-item">
                       <a class="nav-link" href="contactus.html" tabindex="-1">Contact</a>
                     </li>
+                    <li class="nav-item signup">
+                        <a class="nav-link signup" href="signup.html" tabindex="-1">signup</a>
+                      </li>
                   
                     <li class="nav-item offset-1 loginClick">
-                        <a class="nav-item loginBtn mt-2 ml-1" href="login.html" tabindex="-1">login</a>
+                        <a class="nav-item loginBtn mt-2 " href="login.html" tabindex="-1">login</a>
                       </li>
-                    
+                     
                 </ul>
-                <div class="iconNav offset-1">
+                <div class="iconNav offset-1 buyNow">
                         <input type="search" class="searchIcon" placeholder="search here">                       
                            <a class="nav-item "><i class="iconNav fa fa-search fa-2x"></i></a>  
-                          <a class="nav-item "><i class="iconNav nav-item fa fa-shopping-cart fa-2x"></i> </a>              
-                              <a class="nav-item "><i class="iconNav heart nav-item fa icon_heart_alt fa-2x"></i> </a>  
-            
-                          </div>
+                          <a class="nav-item "><i class="iconNav nav-item fa fa-shopping-cart fa-2x" id="cart-info"></i> </a>      
+        
+                        <a class="nav-item "><i class="iconNav heart nav-item fa icon_heart_alt fa-2x"></i> </a>  
+                        <div class="shopingCart text-center">
+                            <div class="shopingCart-item" id="shopingCart-item1">
+                               <img class="shopingCart-item-img" id="shopingCart-item-img" src="img/products/product-1.jpg">
+                               <p class="pt-4 shopingCart-item-name" id="shopingCart-item-name">
+                                 clothes
+                               </p>
+                               <p class="pt-4 shopingCart-item-price" id="shopingCart-item-price">
+                                   $200.00
+                               </p>
+                                <p class="pt-4 shopingCart-item-icon">
+                                    <i class="fa fa-trash"></i>
+                                </p>
+                            </div>
+                            <div class="shopingCart-item" id="shopingCart-item2">
+                                <img class="shopingCart-item-img" id="shopingCart-item-img" src="img/products/product-2.jpg">
+                                <p class="pt-4 shopingCart-item-name" id="shopingCart-item-name">
+                                  clothes
+                                </p>
+                                <p class="pt-4 shopingCart-item-price" id="shopingCart-item-price">
+                                    $200.00
+                                </p>
+                                 <p class="pt-4 shopingCart-item-icon">
+                                     <i class="fa fa-trash"></i>
+                                 </p>
+                             </div>
+                             <div class="shopingCart-item" id="shopingCart-item3">
+                                <img class="shopingCart-item-img" id="shopingCart-item-img" src="img/products/product-3.jpg">
+                                <p class="pt-4 shopingCart-item-name" id="shopingCart-item-name">
+                                  clothes
+                                </p>
+                                <p class="pt-4 shopingCart-item-price" id="shopingCart-item-price">
+                                    $200.00
+                                </p>
+                                 <p class="pt-4 shopingCart-item-icon">
+                                     <i class="fa fa-trash"></i>
+                                 </p>
+                             </div>
+                             <div class="p-4 shopingCart-totalPrice">
+                                <h6>total price</h6>
+                                <h6 id="shopingCart-totalPrice-number">800</h6>
+                               </div>
+                        </div>
+                </div>
+                         
             
               </div>
         
@@ -104,7 +152,7 @@
 
           <div class="box-item">
             <img src="img/banner-3.jpg">
-            <a class="btn shop-now" href="#">ked's</a>
+            <a class="btn shop-now" href="#">kid's</a>
           </div>
           </div>
         
@@ -347,8 +395,8 @@
 <!------------------------------------------------- Man Banner Section End --------------------------------------------------->
 <!-------------------------------------------- Gallary Section begain -------------------------------------------------------->
  <section class="container-fluid instagram-sec " style="margin-bottom: 50px;">
-    <div class="row p-0 m-0">
-         <div class="col-lg-2 col-md-4 col-sm-6  m-0 p-0 ">
+    <div class="row">
+         <div class="col-lg-2 col-md-4 col-sm-6 ">
             <div class="instagram-sec-contain text-center">
             <img class="insta-img" src="img/insta-1.jpg">
             <div class="overlay">
@@ -359,7 +407,7 @@
             </div>
         </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6  m-0 p-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="instagram-sec-contain text-center">
             <img class="insta-img" src="img/insta-2.jpg">
             <div class="overlay">
@@ -370,7 +418,7 @@
             </div>
         </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6  m-0 p-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="instagram-sec-contain text-center">
             <img class="insta-img" src="img/insta-3.jpg">
             <div class="overlay">
@@ -381,7 +429,7 @@
             </div>
         </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6  m-0 p-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="instagram-sec-contain text-center">
             <img class="insta-img" src="img/insta-4.jpg">
             <div class="overlay">
@@ -392,7 +440,7 @@
             </div>
         </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6  m-0 p-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="instagram-sec-contain text-center">
             <img class="insta-img" src="img/insta-5.jpg">
             <div class="overlay">
@@ -403,7 +451,7 @@
             </div>
         </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-xsm-8 m-0 p-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xsm-8">
             <div class="instagram-sec-contain text-center">
             <img class="insta-img" src="img/insta-6.jpg">
             <div class="overlay">
@@ -606,6 +654,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>
